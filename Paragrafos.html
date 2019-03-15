@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <title>Parágrafos em HTML</title>
+    <meta name="author" content="Dahan Schuster"/>
+    <meta name="description" content="Demonstração do uso de tags de parágrafos em HTML"/>
+    <link rel="shortcut icon" href="https://iconsplace.com/wp-content/uploads/_icons/ffa500/256/png/number-2-filled-icon-11-256.png"/>
+    <style>
+        div#cabecalho {
+            font-family: sans-serif;
+            font-size: 15pt;
+            background: #e2ff72;
+            width: 900px;
+            margin: auto;
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-bottom: 3px dotted black;
+        }
+        
+        div#cabecalho img#ifs-logo{
+            width: 250px;
+            position: absolute;
+            left: 1150px;
+            top: 10px;
+            
+        }
+        div#titulo {
+            font-family: serif;
+            font-size: 18pt;
+            background: #ea4b4b;
+            width: 900px;
+            margin: auto;
+            padding: 5px;
+            text-align: center; 
+            color: white;
+            border-bottom: 3px solid black;
+        }
+        body{
+            background: lightblue;
+        }
+        div#corpo {
+            background: white;
+            width: 900px;
+            margin: -20px auto 0px auto;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 10px;
+            box-shadow: 0px 0px 25px grey;
+        }
+        
+        h1, h2{
+            text-align: center;
+        }
+        
+        h3 {
+            padding: 5px;
+            background-color: #eeeeee;
+        }
+        ul {
+            padding-left: 60px;
+        }
+        h5, h6 {
+            font-size: 10pt;
+        }
+        h5 {
+            margin-top: 5px;
+        }
+        h6 {
+            margin-top: -20px;
+        }
+        footer {
+            padding: 0px 5px 1px 5px;
+            width: 900px;
+            margin: auto;
+            background-color: floralwhite;
+            border-top: 3px solid black;
+            text-align: center;
+        }
+    
+    </style>
+</head>
+
+<header>
+    <div id="cabecalho">
+        Instituto Federal de Sergipe<br/>
+        Curso: Técnico Integrado em Informática<br/>
+        Matéria: Contrução de Sites<br/>
+        <img id="ifs-logo" src="http://www.ifs.edu.br/comunicacao/images/Imagens/Marcas/IFS_puro/IFS---horizontal-01.png"/>
+    </div>
+    <div id="titulo">
+        Aula 04 - Atividade 02:<br/>
+        Parágrafos em HTML
+    </div>
+</header>
+<body>
+    <div id="corpo">
+    <h1>Boas práticas de programação - Parte 2</h1>
+    <h2>Dicas para construção de código limpo e organizado</h2>
+    <h3>Crie sistemas que sejam mantíveis em primeiro lugar.</h3>
+        <p>Torne seu código legível da mesma forma como o torna executável. Lembre-se: alguém irá ler e atualizar seu sistema algum dia, seja este alguém você ou não, então torne-o de fácil compreensão.</p>
+    <h3>Refatore! Refatore! Refatore!</h3>
+        <p>Seja honesto com seu código. Refatoração possui diversos benefícios, como: 
+            <ul>
+                <li>Tornar o código organizado;</li>
+                <li>Menor probabilidade de bugs (teste e comprove: muitas vezes um bug ocorre simplesmente por desorganização do código)</li>
+                <li>Facilidade para encontrar bugs (além de possuir poucos bugs, um código organizado torna fácil a procura pelos que ainda restam);</li>
+                <li>Aumentar o desempenho.</li>
+            </ul>
+    <h3>Escreva seus códigos como escreveria um livro.</h3>
+        <p>Uma boa forma de tornar seu código organizado é mapeá-lo como um livro, nomeando cada método como nomearia um capítulo, cada variável como um personagem.<br>
+        Por exemplo, não é necessário ver o código inteiro para saber o que este sistema faz apenas lendo seus métodos principais:</p>
+        <pre>
+        <code>
+        public static void main(String[] args) {
+            abrirArquivo();
+            recuperarDadosDoArquivo();
+            preencherListaComDados();
+            receberDadosDoUsuario();
+            salvarDadosNoArquivo();
+            fecharArquivo();
+        }
+        </code>
+        </pre>
+        <p>Faça um teste antes de ler a linha abaixo: quanto tempo você demora para entender o que faz este programa?<br>
+        <br>
+        <b>Resposta:</b> um sistema que manipula um arquivo .txt, lê nomes digitados pelo usuário, armazena em um ArrayList e salva no arquivo.<br>
+        A sensação que dá é nem seria necessário explicar, não é? Isto porque o programa já é autoexplicativo.</p>
+        
+    <h3>Use nomes pronunciáveis.</h3>
+        <p>Humanos são bons em decifrar palavras pronunciáveis, então nomeie seu código com palavras que nós possamos entender. Por exemplo, use "valorMaximo" ao invés de "vlrMx".</p>
+    <h3>"The @author field of a Javadoc tells us who we are. We are authors. And one thing about
+authors is that they have readers. Indeed, authors are responsible for communicating well
+with their readers. The next time you write a line of code, remember you are an author,
+writing for readers who will judge your effort."<br>
+									- Uncle Bob, autor do livro Clean Code</h3>
+    </div>
+</body>
+<footer>
+    <h5>Autor: Dahan Schuster</h5>
+    <h6>Github: <a href="https://github.com/Dahan-Schuster" target="_blank">Dahan-Schuster</a></h6>
+</footer>
+    
+</html>

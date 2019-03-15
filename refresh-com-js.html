@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Dahan Schuster"/>
+        <meta name="description" content="Exemplo básico da função refresh da tag HTML5 meta, utilizando recursos de JavaScript e CSS3."/>
+        <title>Exemplo de Refresh - Dahan Schuster</title>
+        
+        <!-- Estilo com CSS3 -->
+        <style type="text/css">
+            p {
+                text-align: center;
+                color: blueviolet
+            }
+            p:hover {
+                background-color: blueviolet;
+                color: azure;;
+                text-decoration: underline;
+            }
+        </style>
+
+        <!-- Função refresh do HTML5 -->
+        <meta http-equiv="refresh" content="4"/>
+
+        <!-- Geração de números aleatórios com JavaScript -->
+        <script>
+            function sorteioNumero(){
+                resultado.innerHTML = Math.random() * 50;
+            }
+            window.onload = sorteioNumero;
+        </script>
+    
+    </head>
+    
+<body style="background-color: cornsilk">
+    
+    <p id="resultado"> </p>
+    
+    </body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <title>Títulos em HTML</title>
+    <meta name="author" content="Dahan Schuster"/>
+    <meta name="description" content="Demonstração do uso de tags de titulo em HTML"/>
+    <link rel="shortcut icon" href="https://iconsplace.com/wp-content/uploads/_icons/ffa500/256/png/number-1-filled-icon-11-256.png"/>
+    <style>
+        div#cabecalho {
+            font-family: sans-serif;
+            font-size: 15pt;
+            background: #e2ff72;
+            width: 900px;
+            margin: auto;
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-bottom: 3px dotted black;
+        }
+        
+        div#cabecalho img#ifs-logo{
+            width: 250px;
+            position: absolute;
+            left: 1150px;
+            top: 10px;
+            
+        }
+        div#titulo {
+            font-family: serif;
+            font-size: 18pt;
+            background: #ea4b4b;
+            width: 900px;
+            margin: auto;
+            padding: 5px;
+            text-align: center; 
+            color: white;
+            border-bottom: 3px solid black;
+        }
+        body{
+            background: lightblue;
+        }
+        div#corpo {
+            background: white;
+            width: 900px;
+            margin: -20px auto 0px auto;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 10px;
+            box-shadow: 0px 0px 25px grey;
+        }
+        
+        h1, h2{
+            text-align: center;
+        }
+        
+        h3 {
+            padding: 5px;
+            background-color: #eeeeee;
+        }
+        h4 {
+            margin-top: -20px;
+            padding: 5px;
+            margin-left: 30px;
+            background-color: #f6ffc9;
+        }
+        ul {
+            padding-left: 60px;
+            background-color: #ffc9c9;
+        }
+        h5, h6 {
+            font-size: 10pt;
+        }
+        h5 {
+            margin-top: 5px;
+        }
+        h6 {
+            margin-top: -20px;
+        }
+        footer {
+            padding: 0px 5px 1px 5px;
+            width: 900px;
+            margin: auto;
+            background-color: floralwhite;
+            border-top: 3px solid black;
+            text-align: center;
+        }
+    
+    </style>
+</head>
+
+<header>
+    <div id="cabecalho">
+        Instituto Federal de Sergipe<br/>
+        Curso: Técnico Integrado em Informática<br/>
+        Matéria: Contrução de Sites<br/>
+        <img id="ifs-logo" src="http://www.ifs.edu.br/comunicacao/images/Imagens/Marcas/IFS_puro/IFS---horizontal-01.png"/>
+    </div>
+    <div id="titulo">
+        Aula 04 - Atividade 01:<br/>
+        Títulos em HTML
+    </div>
+</header>
+<body>
+    <div id="corpo">
+    <h1>Boas práticas de programação</h1>
+    <h2>Dicas para construção de código limpo e organizado</h2>
+    <h3>Dê nomes apropriados às variáveis e métodos.</h3>
+        <h4>Os nomes identificam os componentes de um código, por isso são de extrema importância.</h4>
+        <ul>
+            <li><b>CLASSES</b> devem ser nomeadas com <b>SUBSTANTIVOS</b>, ou frases substantivas, NUNCA UM VERBO!<br>(Ex.: Cliente, Arquivo, Pessoa);</li>
+            <li><b>MÉTODOS</b> devem ser nomeados com <b>VERBOS</b>, ou frases verbais <br>(Ex.: cadastrar_cliente(), excluir_arquivo()).</li>
+            <br>
+            <ul>
+                <li>Getters devem começar com 'get' (ex.: getNome)</li>
+                <li>Setters devem começar com 'set' (ex.: setCPF)</li>
+			    <li>Predicados devem começar com 'is' (ex.: isCadastrado)</li>
+            </ul>
+            </ul>
+    <h3>Mantenha seu código organizado.</h3>
+        <h4>Saiba onde cada coisa está. Isto pode ser feito durante a construção, colocando cada macaco no seu galho.</h4>
+    <h3>Não largue lixo pelo seu código!</h3>
+        <h4>Pensou em algo para implementar? Fez um código que ainda não está funcionando? Precisa de explicação demais para entender uma lógica? Não lote seu código de comentários. Anote suas ideias num arquivo; Guarde códigos ainda não implementados em outro lugar; reorganize seu método para que tenha um funcionamento entendível, mas não polua suas linhas.</h4>
+    <h3>Padronize sua forma de programar.</h3>
+        <h4>É como ter um traço específico para sua forma de desenhar, ao invés de inventar um traço novo a cada desenho. É a sua marca. Também se encaixa em um grupo de programadores. O melhor é que todos concordem em um padrão de formatação, para que a equipe possa enteder os métodos de qualquer um sem ter de decifrar o que cada programador implementou.</h4>
+    <h3>Seja disciplinado.</h3>
+        <h4>Siga as boas práticas de programação. Esteja aberto a mudanças e aprenda com seus erros.</h4>
+    <h3>"Um sistema é tão bom quanto o elo mais fraco na corrente"</h3>
+        <h4>Se você possui um sistema que é muito, muito bom em uma certa função mas uma bosta em outra, seu sistema é uma bosta. Não pense que o elo mais forte da corrente trabalha sozinho. A corrente quebra justamente no elo mais fraco, então trabalhe duro em todas as fucionalidades.</h4>
+    </div>
+</body>
+<footer>
+    <h5>Autor: Dahan Schuster</h5>
+    <h6>Github: <a href="https://github.com/Dahan-Schuster" target="_blank">Dahan-Schuster</a></h6>
+</footer>
+    
+</html>
