@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cores de texto</title>
+	<meta name="author" content="Dahan Schuster"/>
+	<meta name="description" content="Demonstração de uso de cores de texto em html" />
+	<link rel="shortcut icon" href="https://iconsplace.com/wp-content/uploads/_icons/ffa500/256/png/number-3-filled-icon-11-256.png"/>
+	<style>
+		img#ifs-logo {
+			width: 250px;
+		}
+		body {
+			box-shadow: 1px 1px 10px gray;
+			background: #fff4f4;
+			width: 710px;
+			margin: auto;
+			padding: 5px;
+		}
+		table#cabecalho {
+			background: #e2ff72;
+			padding: 5px;
+			margin-top: -5;
+			border-bottom: 3px dotted black;
+			font-family: sans-serif;
+			font-size: 15pt;
+		}
+		h1#titulo-ifs {
+			margin: 0;
+			font-size: 18pt;
+		}
+		table#titulo {
+            background: #ea4b4b;
+            color: white;
+            text-align: center; 
+            padding: 5px;
+            border-bottom: 1px solid black;
+            font-family: serif;
+            font-size: 18pt;
+        }
+        h1#manchete {
+        	margin-bottom: 1px;
+        }
+        div#texto {
+        	font-size: 14pt;
+        	text-align: center;
+        	padding: 5px;
+        }
+        div#arco-íris {
+        	text-align: center;
+        }
+        table.rainbow-table {
+        	height: 30px;
+        	border-width: thin;
+        	border-style: solid;
+        	border-color: black;
+        	background-color: white;
+        }
+
+        table.rainbow-table td#red, td#orange, td#yellow, td#green, td#cyan, td#blue, td#magenta, td#purple {
+        	transition: background-color 0.5s ;
+        	transition-timing-function: cubic-bezier(0,1,1,1);
+        }
+
+        table.rainbow-table td#red:hover {
+        	background-color: red;
+        } 
+        table.rainbow-table td#orange:hover {
+        	background-color: orange;
+        } 
+        table.rainbow-table td#yellow:hover {
+        	background-color: yellow;
+        } 
+        table.rainbow-table td#green:hover {
+        	background-color: green;
+        } 
+        table.rainbow-table td#cyan:hover {
+        	background-color: cyan;
+        } 
+        table.rainbow-table td#blue:hover {
+        	background-color: blue;
+        } 
+        table.rainbow-table td#magenta:hover {
+        	background-color: magenta;
+        } 
+        table.rainbow-table td#purple:hover {
+        	background-color: purple;
+        }
+
+		table#rodape {
+			background: white;
+			text-align: center;
+			border-top: 1px solid black;
+			font-size: 10pt;
+		}
+	</style>
+</head>
+<header>
+	<table id="cabecalho" width="700" cellpadding="0" cellspacing="0" align="center" >
+		<tr>
+			<td>
+				<table id="informacoes" width="450" cellpadding="3" cellspacing="0" align="left">
+					<tbody>
+						<tr>
+							<td><h1 id="titulo-ifs">Instituto Federal de Sergipe</h1></td>
+						</tr>
+						<tr>
+							<td><b>Curso:</b> Técnico Integrado em Informática</td>
+							
+						</tr>
+						<tr>
+							<td><b>Matéria:</b> Construção de sites</td>
+						</tr>
+						<tr>
+							<td><b>Aluno:</b> Dahan Poiel Lima Schuster</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+			<td>
+				<img id="ifs-logo" src="http://www.ifs.edu.br/comunicacao/images/Imagens/Marcas/IFS_puro/IFS---horizontal-01.png"/>
+			</td>
+		</tr>
+	</table>
+	<table id="titulo" width="710" cellpadding="3" cellspacing="3" align="center">
+		<tbody>
+			<tr>
+				<td></td>
+				<td>
+					Aula 05 - Atividade 03:<br>
+					Cores de texto
+				</td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</header>
+<body>
+	<div id=texto>
+		<font color="red" id="vermelho">VERMELHO</font> - <font color="orange" id="laranja">LARANJA </font> - <font color="yellow" id="amarelo">AMARELO </font> - <font color="green" id="verde">VERDE </font><br>
+		<font color="blue" id="azul">AZUL </font> - <font color="pink" id="pink">P!NK </font> - <font color="magenta" id="magenta">MAGENTA</font> - <font color="purple" id="violeta"> VIOLETA</font>
+	</div>
+	<hr>
+	<div id="arco-íris">
+		Tabela arco-íris:
+		<table class="rainbow-table" width="500" cellspacing="0" cellpadding="0" align="center">
+			<tbody>
+				<tr>
+					<td id="red"></td>
+					<td id="orange"></td>
+					<td id="yellow"></td>
+					<td id="green"></td>
+					<td id="cyan"></td>
+					<td id="blue"></td>
+					<td id="magenta"></td>
+					<td id="purple"></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+	</div>
+</body>
+<footer>
+	<table id="rodape" width="710" cellpadding="0" cellspacing="3" align="center">
+		<tbody>
+			<tr>
+				<th></th>
+				<th><b>Autor:</b> Dahan Schuster</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th></th>
+				<th><b>GitHub:</b> <a target="_blank" href="https://github.com/Dahan-Schuster">Dahan-Schuster</a></th>
+				<th></th>
+			</tr>
+		</tbody>
+	</table>
+</footer>
+</html>

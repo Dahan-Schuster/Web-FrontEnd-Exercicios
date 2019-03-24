@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Estilos de texto</title>
+	<meta name="author" content="Dahan Schuster"/>
+	<meta name="description" content="Demonstração de uso de estilos de texto em html" />
+	<link rel="shortcut icon" href="https://iconsplace.com/wp-content/uploads/_icons/ffa500/256/png/number-2-filled-icon-11-256.png"/>
+	<style>
+		img#ifs-logo {
+			width: 250px;
+		}
+		body {
+			box-shadow: 1px 1px 10px gray;
+			background: #fff4f4;
+			width: 710px;
+			margin: auto;
+			padding: 5px;
+		}
+		table#cabecalho {
+			background: #e2ff72;
+			padding: 5px;
+			margin-top: -5;
+			border-bottom: 3px dotted black;
+			font-family: sans-serif;
+			font-size: 15pt;
+		}
+		h1#titulo-ifs {
+			margin: 0;
+			font-size: 18pt;
+		}
+		table#titulo {
+            background: #ea4b4b;
+            color: white;
+            text-align: center; 
+            padding: 5px;
+            border-bottom: 1px solid black;
+            font-family: serif;
+            font-size: 18pt;
+        }
+        h1#manchete {
+        	margin-bottom: 1px;
+        }
+        div#texto {
+        	font-size: 14pt;
+        }
+		table#rodape {
+			background: white;
+			text-align: center;
+			border-top: 1px solid black;
+			font-size: 10pt;
+		}
+	</style>
+</head>
+<header>
+	<table id="cabecalho" width="700" cellpadding="0" cellspacing="0" align="center" >
+		<tr>
+			<td>
+				<table id="informacoes" width="450" cellpadding="3" cellspacing="0" align="left">
+					<tbody>
+						<tr>
+							<td><h1 id="titulo-ifs">Instituto Federal de Sergipe</h1></td>
+						</tr>
+						<tr>
+							<td><b>Curso:</b> Técnico Integrado em Informática</td>
+							
+						</tr>
+						<tr>
+							<td><b>Matéria:</b> Construção de sites</td>
+						</tr>
+						<tr>
+							<td><b>Aluno:</b> Dahan Poiel Lima Schuster</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+			<td>
+				<img id="ifs-logo" src="http://www.ifs.edu.br/comunicacao/images/Imagens/Marcas/IFS_puro/IFS---horizontal-01.png"/>
+			</td>
+		</tr>
+	</table>
+	<table id="titulo" width="710" cellpadding="3" cellspacing="3" align="center">
+		<tbody>
+			<tr>
+				<td></td>
+				<td>
+					Aula 05 - Atividade 02:<br>
+					Estilos de texto
+				</td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</header>
+<body>
+	<h1 id="manchete">Sem tempo x.x</h1>
+	<hr>
+	<div id="texto">
+		<b>Infelizmente</b> este exemplo será <i>muito</i> mais simples que os outros que enviei, <u>devido a deveres passados por outros professores.</u><br>
+		<sup>Não que eu dê mais importância às outras matérias do que dou para construção de sites, claro que não.</sup><br>
+		<sub>Mas se eu continuar passando três horas em cada exercício vou levar o dia inteiro para terminar os três da última aula :P</sub>
+		<hr>
+		Um bom exemplo de estilo pré-formatado é um código de programação, e não há melhor exemplo melhor de código que o "Olá, mundo!", então aqui vai o código em todas as linguagens que consigo lembrar sem dar um "gúgou":<br><br>
+		<pre style="font-size: 12pt;">
+
+<b>Java:</b>
+<code>
+	public class OlaMundo {
+		public static void main(String[] args) {
+			System.out.println("Olá, Mundo!");
+		}
+	}
+</code>
+
+<b>Ruby:</b>
+<code>
+	puts 'Olá, Mundo!'
+</code>
+
+<b>Python:</b>
+<code>
+	print('Olá, Mundo!')
+</code>
+
+<b>PHP:</b>
+<code>
+	echo 'Olá, Mundo!';
+</code>
+		</pre>
+		<hr>
+		<p style="text-align: center;">Agora, sinceramente, não entendi do que se trata a parte de parágrafos centralizados.</p>
+		<p>Então vou apenas criar dois parágrafos e centralizar o primeiro com CSS ¯\_(ツ)_/¯ </p>
+		<hr>
+		É isto! Esta foi uma página mais preguiçosinha, sinto muito, mas prometo caprichar nas próximas (das outras aulas, a próxima dessa aula também será assim :/).
+	</div>
+</body>
+<footer>
+	<table id="rodape" width="710" cellpadding="0" cellspacing="3" align="center">
+		<tbody>
+			<tr>
+				<th></th>
+				<th><b>Autor:</b> Dahan Schuster</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th></th>
+				<th><b>GitHub:</b> <a target="_blank" href="https://github.com/Dahan-Schuster">Dahan-Schuster</a></th>
+				<th></th>
+			</tr>
+		</tbody>
+	</table>
+</footer>
+</html>
